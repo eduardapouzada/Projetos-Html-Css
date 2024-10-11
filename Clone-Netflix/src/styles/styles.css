@@ -1,0 +1,157 @@
+:root{
+    --cor-fonte01: #fff;
+    --cor-fonte02: #e9e9e9;
+    --cor-fonte03: #b3b3b3;
+    --cor-bg: rgba(0, 0, 0, 0.4);
+    --cor-bg-content: rgba(0, 0, 0, 0.8);
+}
+
+
+body{
+    background-image: url("../assets/bg.jpg");
+}
+
+.interface{
+    height: auto;
+    background-color: var(--cor-bg);
+}
+
+.header img{
+    width: 6.5rem; 
+    height: 3rem;
+    margin: 2rem 0rem 0rem 12.5rem;
+}
+
+.main{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.main-login{    
+    background-color: var(--cor-bg-content);
+    width: 32%; height: auto;
+    margin: 0rem auto 5rem auto;
+    padding-bottom: 2.5rem;
+}
+
+.main-login__form{ 
+    color: var(--cor-fonte01);
+    margin: 1.25rem auto;
+    padding: 1.9rem 0rem;
+    width: 66%; 
+}
+
+.p_entrar{
+    color: var(--cor-fonte01);
+    font-size: 24pt;
+    font-weight: 600;  
+    margin: 1.25rem 0rem 0.625rem 0.125rem;
+}
+
+.main-login__form .input{
+    background-color: var(--cor-bg-content);
+    color: white;
+    border-radius: 0.25rem;    
+    border: 0.1px solid #b3b3b3;
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 1.25rem 0.75rem;
+    margin-bottom: 1.375rem;
+}
+
+.main-login__form .input::placeholder{
+    color: var(--cor-fonte03);
+    font-size: 11pt;
+}
+
+.form-button{
+    background-color: red;
+    width: 100%;
+    padding: 12px 0px;
+    margin: 12px 0px 10px 0px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+    font-weight: 600;
+}
+
+.form-button:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.form-a{
+    text-align: center;
+}
+
+.form-a a{
+    text-decoration: none;
+    color: var(--cor-fonte02);
+}
+
+.form-a a:hover{
+    text-decoration: underline;
+}
+
+.main-footer{
+    margin: 22px 0px;
+}
+
+.main-footer label{
+    color: white;
+    margin-bottom: 2px;
+    margin-left: 6px;
+}
+
+.main-footer_text p{
+    color: var(--cor-fonte02);
+    margin: 20px 0px 10px 0px;
+}
+
+.main-footer_text a.assine{
+    color: var(--cor-fonte01);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.main-footer_text span{
+    color: var(--cor-fonte03);
+    font-size: 10pt;
+}
+
+footer{ 
+    width: 100%;
+    padding: 20px 0px 100px 0px;
+    height: fit-content;
+    background-color: var(--cor-bg-content);
+    color: var(--cor-fonte03);
+    font-size: 12pt;
+}
+
+.footer-header{ 
+    margin:  0px auto;
+    padding: 30px 0px 20px 70px;
+    width: 66%;
+}
+
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    width: 68%;
+    margin: 0px auto;
+}
+
+
+.footer-content p{
+    margin: 0px 20px 2px 50px;
+    text-decoration: underline;
+}
+ 
+.footer-content p:hover{
+    color: #d0d0d0;
+    cursor: pointer;
+}
