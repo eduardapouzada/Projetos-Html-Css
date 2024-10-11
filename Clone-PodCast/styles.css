@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color:#121A2B;
+}
+.background{
+    width: 100%;
+}
+  
+.background::before{ 
+    position: absolute;
+    background-image: url('assets/bg.png');
+    background-position: right;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    content: '';
+}
+
+.interface{
+    width: 100vw; height: 100vh;
+    
+}
+
+.area-left{
+    width: 45%; 
+    margin: 100px 70px 20px 50px; 
+}
+
+#logo{
+    width: 180px;
+}
+
+.area-left h1{
+    color: white;
+    font-size: 28pt;
+    margin: 50px 0px;
+    text-align: justify;
+}
+
+.area-left #p1{
+    margin: 50px 0px;
+    font-size: 12pt;
+    color: #dbdbdb;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.area-left #p2{
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+.area-form form{
+    margin: 10px auto; 
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #2C344B;
+    display: flex;
+    align-items: center;
+}
+
+
+.area-form #input{
+    border: none;
+    width: 200px;
+    height: 22px;
+    background-color: transparent;
+    margin: 5px 20px;
+    color: #757575;
+    font-size: 12pt;
+    outline: none;
+}
+
+.area-form #button{
+    width: 150px; height: 38px;
+    background-color: #1ED760;
+    border: none;
+    border-radius: 20px; 
+    color: black;
+    font-size: 13pt;
+    font-weight: 600;
+    margin: 0 0 0 290px;
+}
+
+.area-form #button:hover{
+    background-color: #32FF5F;
+}
+
+.area-img a{
+    text-decoration: none;
+}
+
+.img-logos{
+    filter:grayscale(100%); /* Deixando nossas imagens sem cores */
+    width: 90px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0px 12px;
+    transition: filter 0.4s;
+    transition: transform 0.2s;
+  }
+  
+.img-logos:hover{
+    filter:grayscale(0); /* Voltando a cor */
+    transform: scale(1.1) 
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    .background::before{ 
+        background-position: top;
+        background-size: 100%;
+        filter: blur(2px);
+        opacity: 0.4;
+        overflow: hidden;
+    }
+    .area-left{
+    width: 70%; 
+    }
+
+    .area-left h1{
+        font-size: 34pt;
+    }
+
+    .area-left #p1{
+        margin: 80px 10px;
+        font-size: 16pt;
+    }
+
+    .area-form{
+        width: 80%;
+    }
+
+    #p1{
+        width: 80%;
+    }
+
+    .area-form #button{
+        margin: 0 0 0 148px;
+    }
+
+    .img-logos{
+        margin: 30px 12px;
+
+    }
+}
+
+@media (max-width: 600px){
+    .area-left{
+        margin: 0 auto;
+    }
+    .area-left h1{
+        margin-top: 160px;
+        font-size: 36pt;
+        }
+    
+    .area-left #p1{
+        margin: 80px 10px;
+        font-size: 16pt;
+    }
+    
+    .area-form #button{
+        margin: 0 0 0 190px;
+    }
+    
+    .img-logos{
+        margin: 30px 12px;
+    }
+}
